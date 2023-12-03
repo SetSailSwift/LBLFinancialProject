@@ -15,6 +15,7 @@ struct Cell: View {
     var body: some View {
         Group {
             if orientation.isLandscape {
+                // Landscape
                 HStack(spacing: 5) {
                     VStack {
                         ProfileImage(viewModel: viewModel, orientation: $orientation)
@@ -37,6 +38,7 @@ struct Cell: View {
                     }
                 }
             } else {
+                // Portrait
                 HStack {
                     VStack(spacing: 5) {
                         ProfileImage(viewModel: viewModel, orientation: $orientation)
@@ -48,6 +50,7 @@ struct Cell: View {
                             .font(.system(size: 10))
                     }
                     .frame(width: 75)
+                    Divider()
                     Text(comment.body)
                         .fixedSize(horizontal: false, vertical: true)
                         .font(.system(size: 13))
