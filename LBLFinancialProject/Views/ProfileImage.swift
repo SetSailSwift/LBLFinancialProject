@@ -28,6 +28,8 @@ struct ProfileImage: View {
     }
 }
 
+/// BaseProfileImage
+/// Image view that takes in the image state of the view, along with the device orientation. Provides the main image to display.
 struct BaseProfileImage: View {
     let imageState: ProfileImageViewModel.ImageState
     let orientation: UIDeviceOrientation

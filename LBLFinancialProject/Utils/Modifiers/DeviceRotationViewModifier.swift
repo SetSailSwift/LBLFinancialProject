@@ -8,6 +8,8 @@
 import Foundation
 import SwiftUI
 
+/// DeviceRotationViewModifier
+/// View modifier that detects when device orientation changes and updates accordingly
 struct DeviceRotationViewModifier: ViewModifier {
     let action: (UIDeviceOrientation) -> Void
     

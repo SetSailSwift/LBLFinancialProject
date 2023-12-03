@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// Generic Network Manager
+/// Source: https://medium.com/devtechie/generic-network-manager-using-async-await-task-in-swiftui-6fd746fb4b83
 struct NetworkManager {
     
     func fetch<T: Codable>(from urlString: String) async throws -> T {
