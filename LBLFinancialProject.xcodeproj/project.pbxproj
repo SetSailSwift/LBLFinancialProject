@@ -11,6 +11,13 @@
 		81BE29F92B1A23270038FDB8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BE29F82B1A23270038FDB8 /* ContentView.swift */; };
 		81BE29FB2B1A232A0038FDB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81BE29FA2B1A232A0038FDB8 /* Assets.xcassets */; };
 		81BE29FE2B1A232A0038FDB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81BE29FD2B1A232A0038FDB8 /* Preview Assets.xcassets */; };
+		81BE2A062B1A366D0038FDB8 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BE2A052B1A366D0038FDB8 /* Cell.swift */; };
+		81BE2A092B1A37140038FDB8 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BE2A082B1A37140038FDB8 /* Comment.swift */; };
+		81BE2A0D2B1A4F310038FDB8 /* DeviceRotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BE2A0C2B1A4F310038FDB8 /* DeviceRotationViewModifier.swift */; };
+		81F005852B1BB06D00AD6A8C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F005842B1BB06D00AD6A8C /* NetworkManager.swift */; };
+		81F005882B1BBD6900AD6A8C /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F005872B1BBD6900AD6A8C /* CommentsViewModel.swift */; };
+		81F0058A2B1BD5F500AD6A8C /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F005892B1BD5F500AD6A8C /* ProfileImage.swift */; };
+		81F0058C2B1BD85700AD6A8C /* ProfileImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F0058B2B1BD85700AD6A8C /* ProfileImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		81BE29F82B1A23270038FDB8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		81BE29FA2B1A232A0038FDB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81BE29FD2B1A232A0038FDB8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81BE2A052B1A366D0038FDB8 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		81BE2A082B1A37140038FDB8 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		81BE2A0C2B1A4F310038FDB8 /* DeviceRotationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotationViewModifier.swift; sourceTree = "<group>"; };
+		81F005842B1BB06D00AD6A8C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		81F005872B1BBD6900AD6A8C /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
+		81F005892B1BD5F500AD6A8C /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
+		81F0058B2B1BD85700AD6A8C /* ProfileImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,11 @@
 		81BE29F52B1A23270038FDB8 /* LBLFinancialProject */ = {
 			isa = PBXGroup;
 			children = (
+				81F005862B1BBD4A00AD6A8C /* View Models */,
+				81F005832B1BB05400AD6A8C /* Networking */,
+				81BE2A0A2B1A4F050038FDB8 /* Utils */,
+				81BE2A072B1A36FC0038FDB8 /* Models */,
+				81BE2A042B1A365A0038FDB8 /* Views */,
 				81BE29F62B1A23270038FDB8 /* LBLFinancialProjectApp.swift */,
 				81BE29F82B1A23270038FDB8 /* ContentView.swift */,
 				81BE29FA2B1A232A0038FDB8 /* Assets.xcassets */,
@@ -65,6 +84,56 @@
 				81BE29FD2B1A232A0038FDB8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81BE2A042B1A365A0038FDB8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81BE2A052B1A366D0038FDB8 /* Cell.swift */,
+				81F005892B1BD5F500AD6A8C /* ProfileImage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		81BE2A072B1A36FC0038FDB8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81BE2A082B1A37140038FDB8 /* Comment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		81BE2A0A2B1A4F050038FDB8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				81BE2A0B2B1A4F0F0038FDB8 /* Modifiers */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		81BE2A0B2B1A4F0F0038FDB8 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				81BE2A0C2B1A4F310038FDB8 /* DeviceRotationViewModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		81F005832B1BB05400AD6A8C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				81F005842B1BB06D00AD6A8C /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		81F005862B1BBD4A00AD6A8C /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				81F005872B1BBD6900AD6A8C /* CommentsViewModel.swift */,
+				81F0058B2B1BD85700AD6A8C /* ProfileImageViewModel.swift */,
+			);
+			name = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +206,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81F005852B1BB06D00AD6A8C /* NetworkManager.swift in Sources */,
+				81F0058A2B1BD5F500AD6A8C /* ProfileImage.swift in Sources */,
 				81BE29F92B1A23270038FDB8 /* ContentView.swift in Sources */,
+				81F0058C2B1BD85700AD6A8C /* ProfileImageViewModel.swift in Sources */,
 				81BE29F72B1A23270038FDB8 /* LBLFinancialProjectApp.swift in Sources */,
+				81BE2A062B1A366D0038FDB8 /* Cell.swift in Sources */,
+				81BE2A0D2B1A4F310038FDB8 /* DeviceRotationViewModifier.swift in Sources */,
+				81F005882B1BBD6900AD6A8C /* CommentsViewModel.swift in Sources */,
+				81BE2A092B1A37140038FDB8 /* Comment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

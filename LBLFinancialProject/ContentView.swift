@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var commentViewModel = CommentsViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List(commentViewModel.comments) { comment in 
+            Cell(comment: comment)
         }
-        .padding()
     }
 }
 
