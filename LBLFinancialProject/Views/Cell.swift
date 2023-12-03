@@ -14,11 +14,10 @@ struct Cell: View {
     
     var body: some View {
         Group {
-            // if device is in portrait
             if orientation.isLandscape {
                 HStack(spacing: 5) {
                     VStack {
-                        CircularProfileImage(viewModel: viewModel, orientation: $orientation)
+                        ProfileImage(viewModel: viewModel, orientation: $orientation)
                         Spacer()
                     }
                     VStack(alignment: .leading) {
@@ -40,7 +39,7 @@ struct Cell: View {
             } else {
                 HStack {
                     VStack(spacing: 5) {
-                        CircularProfileImage(viewModel: viewModel, orientation: $orientation)
+                        ProfileImage(viewModel: viewModel, orientation: $orientation)
                         Text(comment.name ?? "Anonymous")
                             .font(.system(size: 10))
                         Text(comment.email ?? "N/A")

@@ -9,7 +9,7 @@ import Foundation
 
 struct NetworkManager {
     
-    func fetchComments<T: Codable>(from urlString: String) async throws -> T {
+    func fetch<T: Codable>(from urlString: String) async throws -> T {
         guard let url = URL(string: urlString) else {
             throw URLError(.badURL)
         }

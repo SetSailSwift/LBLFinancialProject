@@ -18,7 +18,7 @@ class CommentsViewModel: ObservableObject {
     func getComments() {
         Task {
             do {
-                let retrievedComments: [Comment] = try await NetworkManager().fetchComments(from: urlString)
+                let retrievedComments: [Comment] = try await NetworkManager().fetch(from: urlString)
                 DispatchQueue.main.sync {
                     comments = retrievedComments
                 }

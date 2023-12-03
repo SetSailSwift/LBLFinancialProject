@@ -8,7 +8,7 @@
 import PhotosUI
 import SwiftUI
 
-struct CircularProfileImage: View {
+struct ProfileImage: View {
     @ObservedObject var viewModel: ProfileImageViewModel
     @Binding var orientation: UIDeviceOrientation
     
@@ -18,7 +18,7 @@ struct CircularProfileImage: View {
     
     var body: some View {
         PhotosPicker(selection: $viewModel.imageSelection, matching: .images, photoLibrary: .shared()) {
-            ProfileImage(imageState: viewModel.imageState, orientation: orientation)
+            BaseProfileImage(imageState: viewModel.imageState, orientation: orientation)
                 .frame(width: size, height: size)
                 .clipShape(Circle())
                 .background {
@@ -28,7 +28,7 @@ struct CircularProfileImage: View {
     }
 }
 
-struct ProfileImage: View {
+struct BaseProfileImage: View {
     let imageState: ProfileImageViewModel.ImageState
     let orientation: UIDeviceOrientation
     
@@ -55,5 +55,5 @@ struct ProfileImage: View {
 }
 
 #Preview {
-    CircularProfileImage(viewModel: ProfileImageViewModel(), orientation: .constant(.unknown))
+    ProfileImage(viewModel: ProfileImageViewModel(), orientation: .constant(.unknown))
 }
